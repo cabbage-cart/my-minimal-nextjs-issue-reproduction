@@ -20,6 +20,8 @@ services:
   test-app:
     image: node:18.17.1-buster-slim
     working_dir: /app
+    profiles:
+      - "test-app"
     volumes:
       - .:/app
       - ${PWD}/test-app:/app
