@@ -5,7 +5,7 @@ import { NodeSDK } from '@opentelemetry/sdk-node';
 import { SimpleSpanProcessor } from '@opentelemetry/sdk-trace-base';
 
 const traceExporter = new OTLPTraceExporter({
-  url: "http://localhost:4317",
+  url: "http://telemetry:4317",
 })
 
 const sdk = new NodeSDK({ 
